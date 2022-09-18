@@ -9,12 +9,10 @@ const view = {
         const number = this.transformNumber((index % 13) + 1)
         const symbol = Symbols[Math.floor(index / 13)]
         return `
-            <div id="cards">
-                <div class="card">
+            <div class="card">
                 <p>${number}</p>
                 <img src=${symbol}>
                 <p>${number}</p>
-                </div>
             </div>`
     },
     transformNumber (number) {
