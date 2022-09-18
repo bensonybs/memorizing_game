@@ -1,0 +1,30 @@
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  /* 卡片外部排版 */
+  flex: 7% 0 1;
+  height: 8vw;
+  border: solid black 2px;
+  /* 卡片內部 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 2px; /* 卡片邊距 */
+  box-sizing: border-box; /* 設定 box-sizing*/
+}
+
+.card img {
+  max-width: 30%;
+  align-self: center;
+}
+
+.card p {
+  margin: 3px;
+  font-size: 10px;
+}
+.card p:last-child {
+  transform: rotate(180deg);
+}
